@@ -1,0 +1,10 @@
+
+path: C:/Users/andressa/Downloads/ProjetoCafe/datasets
+train: 
+  - images/amarelas
+  - images/vermelhas
+val: 
+  - images/amarelas
+  - images/vermelhas
+nc: 1
+names: ['grao_cafe']

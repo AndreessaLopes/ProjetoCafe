@@ -1,0 +1,19 @@
+# Pastas pesadas de dados
+datasets/
+meu_dataset_cnn/
+
+# Ambiente Virtual
+.venv/
+__pycache__/
+
+# Resultados de treinos (pesados)
+runs/
+
+# Arquivos temporários e de sistema
+*.pyc
+.DS_Store
+
+# Modelos (Opcional: Se forem maiores que 100MB, o GitHub bloqueia)
+# Se quiser salvar o modelo, deixe comentado (#). Se der erro de tamanho, descomente.
+ *.pt
+ *.keras
