@@ -95,7 +95,9 @@ python testar_modelo.py
 Após o treinamento, o projeto permite:
 
 -Detectar múltiplos grãos de café em imagens de campo (YOLO).
+
 -Classificar cada grão detectado como "Verde" ou "Maduro" (CNN).
+
 -Visualizar a confiança da predição em tempo de execução.
 
 ---
