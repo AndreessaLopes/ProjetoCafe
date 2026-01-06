@@ -42,8 +42,9 @@ ProjetoCafe/
 
 Instalação básica das dependências:
 
+```Bash
 pip install tensorflow torch torchvision opencv-python numpy matplotlib ultralytics
-
+```
 ---
 
 ## 🧠 Como Executar o Projeto
@@ -52,17 +53,22 @@ pip install tensorflow torch torchvision opencv-python numpy matplotlib ultralyt
 
 Caso as anotações estejam no formato COCO e seja necessário convertê-las para YOLO:
 
+```Bash
 python converter_coco_yolo.py
+```
 
 Para organizar o dataset para treinamento da CNN:
 
+```Bash
 python gerar_dataset_cnn.py
-
+```
 ---
 
 ### 2️⃣ Treinamento do Detector (YOLO)
 
+```Bash
 python treinar_yolo.py
+```
 
 ---
 
@@ -70,7 +76,9 @@ python treinar_yolo.py
 
 Usa o YOLO treinado acima para recortar grãos das imagens originais e separá-los em pastas (Verde/Maduro) automaticamente.
 
+```Bash
 python gerar_dataset_cnn.py
+```
 
 ---
 
@@ -78,7 +86,9 @@ python gerar_dataset_cnn.py
 
 Define a arquitetura, treina a rede neural nos recortes gerados e salva o arquivo .keras.
 
+```Bash
 python minha_arquitetura.py
+```
 
 ---
 
@@ -86,7 +96,9 @@ python minha_arquitetura.py
 
 Testar o modelo de classificação:
 
+```Bash
 python testar_modelo.py
+```
 
 ---
 
