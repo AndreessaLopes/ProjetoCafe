@@ -5,9 +5,9 @@ from ultralytics import YOLO
 import os
 
 # --- CONFIGURAÇÕES ---
-CAMINHO_YOLO = 'runs/detect/treino_gpu_final2/weights/best.pt'
+CAMINHO_YOLO = 'yolo_detector.pt'
 CAMINHO_CNN = 'modelo_final_cafe.keras'
-PASTA_IMAGENS = 'datasets/images/vermelhas'
+PASTA_IMAGENS = 'dataset/images/'
 
 # Pega a primeira imagem da pasta
 arquivos = [f for f in os.listdir(PASTA_IMAGENS) if f.endswith('.jpg')]
@@ -16,8 +16,7 @@ if not arquivos:
     exit()
     
 # Se quiser testar uma imagem específica, descomente a linha abaixo e ponha o nome:
-# NOME_IMAGEM = 'nome_da_sua_foto.jpg' 
-NOME_IMAGEM = arquivos[2] 
+NOME_IMAGEM = 'cafe3.jpg' 
 
 img_path = os.path.join(PASTA_IMAGENS, NOME_IMAGEM)
 print(f"--- PROCESSANDO: {NOME_IMAGEM} ---")
